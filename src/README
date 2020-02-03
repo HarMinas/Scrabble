@@ -1,0 +1,71 @@
+Name: Harutyun Minasyan	
+USC NetID: Hminasya
+CS 455 PA4
+Spring 2018
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+H.M.
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+The Recursive function used in the Rack class to compute  all subsets of a
+sstring has been provided by the instructor.
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+
+----------------------------------------------
+DESCRIPTION OF YOUR CLASS DESIGN AND ALGORITHMS AND DATA STRUCTURES USED:
+HashMaps are used to store key-value pairs
+-Anagram groups in the dictionary.
+-Results for the words found in the WordFinder.java file.
+
+ArrayLists are used as dynamic storage containers.
+-Each value in the HashMap is an ArrayList containing all the anagrams found in the dictionary that correspond
+ to the letters in the keys of the hashMap.
+ 
+ A TreeSet.
+ -A TreeSet is used to temporary store characters to find the uniqueChars sequence and the mults[] arrays in 
+  Rack class.
+  
+ Class Design
+ -WordFinder - Contains the main method and executes a loop on the console of asking the user for a rack input 
+               and processing that input by printing all legal words and their values that can be formed using that rack.
+               Contains Rack, ScoreTable and AnagramDicitonary objects.
+-AnagramDictionary - holds the results of a pre-processed dictionary. The dictionary is specified by a file.
+-Rack - holds the characters using which one needs to find the legal words.
+-ScoreTable - Has the ability of calculating the value of a word given its characters in any sequence. 
+              Stores a scores value for each upper and lower case character.
+-Word - A class that holds a word and a score of the word. It implements the Comparable interface. The compareTo method 
+        of the interface compares two words first by the their value, then the words alphabetically only if the 
+        value is the same. Words with higher value will come before words with lower values in the sorted array.
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+
+
+
